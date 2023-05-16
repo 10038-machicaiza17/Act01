@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" id="direccion-envio" name="formRegistro">
+            <fieldset>
+                <legend>DIRECCION DE ENVIO</legend>
+                <label for="calleP">Calle Principal</label>
+                <br>
+                <input type="text" name="calleP" id="calleP">
+                <br><br>
+                <label for="transversal">Transversal</label>
+                <br>
+                <input type="text" name="transv" id="transv">
+                <br><br>
+                <input type="checkbox" name="checkbox-entrega-prop" id="checkbox-entrega-prop" onchange="activarBoton()" onclick="desmarcar()">
+                <label for="checkbox-entrega-prop">Entrega al Propietario</label>
+                <br>
+                <input type="checkbox" name="checkbox-entrega-terc" id="checkbox-entrega-terc" onchange="showForm()" onclick="desmarcar()">
+                <label for="checkbox-entrega-terc">Entrega a Tercero</label>
+                <br><br>
+                <label for="cantones">Cantones:</label>
+                <select name="opcionesC" id="opcionesC">
+                    <option value="opcion1">Quito</option>
+                    <option value="opcion2">Puerto Quito</option>
+                    <option value="opcion3">opcion 3</option>
+                    <option value="opcion4">opcion 4</option>
+                    <option value="opcion5">opcion 5</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Enviar Datos" id="boton-enviar" disabled>
+            </fieldset>
+        </form>
+        <form action="" id="info-confidencial">
+            <fieldset>
+                <legend>INFORMACION CONFIDENCIAL</legend>
+                <label for="text-codigo-postal">Codigo Postal:</label>
+                <input type="text" name="text-codigo-postal" id="text-codigo-postal">
+                <br><br>
+                <label for="text-refe-direccion">Referencia de direccion:</label>
+                <br>
+                <textarea name="text-refe-direccion" id="text-refe-direccion" cols="30" rows="10"></textarea>
+                <br><br>
+                <input type="submit" value="Guardar">
+            </fieldset>
+        </form>
+    </div>
+    <script src="../js/forms.js"></script>
+</body>
+</html>

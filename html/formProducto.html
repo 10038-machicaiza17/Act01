@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formulario-producto" name="formProducto">
+        <fieldset id="datos-basicos">
+            <legend>Datos Basicos</legend>
+            <label for="nombre-producto">Nombre Producto:</label>
+            <input type="text" name="nombre-producto" id="nombre-producto">
+            <br><br>
+            <label for="text-refe-producto">Descripcion</label>
+            <br>
+            <textarea name="text-refe-producto" id="text-refe-producto" cols="30" rows="10"></textarea>
+            <br>
+            <label for="foto">Foto</label>
+            <br>
+            <input type="file" name="foto" id="foto">
+            <br><br>
+            <input type="checkbox" name="checkbox-info-confi" id="checkbox-info-confi">
+            <label for="checkbox-info-confi">Agregar informacion confidencial</label>
+            <br>
+        </fieldset>
+    <br>
+        <fieldset id="datos-economicos">
+            <legend>Datos Economicos</legend>
+            <label for="precio-producto">Precio:</label>
+            <input type="number" name="precio-producto" id="precio-producto">$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="impuesto-producto">Impuesto:</label>
+            <select name="impuesto-producto" id="impuesto-producto">
+                <option value="opcion1">2%</option>
+                <option value="opcion2">4%</option>
+                <option value="opcion3">6%</option>
+            </select>
+            <br><br>
+            <label for="promo-producto">
+                Promocion
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="opcion-prom" id="prom-ninguno">
+                Ninguno
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="opcion-prom" id="prom-trans-gratuito">
+                Transporte Gratuito
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="opcion-prom" id="prom-descuento">
+                Descuento 5%
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Guardar Cambios">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Borrar Datos Introducidos" onclick="resetForm()">
+    </form>
+    <script src="../js/forms.js"></script>
+</body>
+</html>

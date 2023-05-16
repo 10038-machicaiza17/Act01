@@ -1,0 +1,51 @@
+.size{
+    margin-top: 15px;
+    width: 40%;
+    height: 80%;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    display: inline-block;
+}
+  
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family:Arial;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    margin-left: 20px;
+}
+
+#direccion-envio{
+    width: 45%;
+}
+
+#info-confidencial{
+    width: 45%;
+    display: none;
+}
+
+.form-container form {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}

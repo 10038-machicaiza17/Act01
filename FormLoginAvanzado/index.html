@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Estilos Google -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Formulario Login y Registro de Usuarios</title>
+</head>
+<body>
+    <div class="contenedor-formularios">
+        <!-- Links de los formularios -->
+        <ul class="contenedor-tabs">
+            <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+            <li class="tab tab-primera" name="registrar"><a href="#registrarse" >Registrarse</a></li>
+        </ul>
+
+        <!-- Contenido de los Formularios -->
+        <div class="contenido-tab">
+            <!-- Iniciar Sesion -->
+            <div id="iniciar-sesion">
+                <h1>Iniciar Sesión</h1>
+                <form name="FormaLogin" action="" method="post" onsubmit="return validarForm1()">
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class=>*</span>
+                        </label>
+                        <input type="text" name="usuario" id="usuario">
+                        <span class="mensaje-error" id="mensaje-usuario"></span>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class=>*</span>
+                        </label>
+                        <input type="password" name="clave" id="clave">
+                        <span class="mensaje-error" id="mensaje-clave"></span>
+                    </div>
+                    <input type="submit" class="button button-block" value="Iniciar Sesión">
+                </form>
+            </div>
+
+            <!-- Registrarse -->
+            <div id="registrarse">
+                <h1>Registrarse</h1>
+                <form action="" method="post" onsubmit="return validarForm2()">
+                    <div class="fila-arriba">
+                        <div class="contenedor-input">
+                            <label>
+                                Nombre <span class=>*</span>
+                            </label>
+                            <input type="text" name="nom" id="nombre">
+                            <span class="mensaje-error" id="mensaje-nombre"></span>
+                        </div>
+
+                        <div class="contenedor-input">
+                            <label>
+                                Apellido <span class=>*</span>
+                            </label>
+                            <input type="text" name="ape" id="apellido">
+                            <span class="mensaje-error" id="mensaje-apellido"></span>
+                        </div>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class=>*</span>
+                        </label>
+                        <input type="text" name="usu" id="usu">
+                        <span class="mensaje-error" id="mensaje-usu"></span>
+                    </div>
+                    <div class="contenedor-input">
+                            <label>
+                                Email <span class=>*</span>
+                            </label>
+                        <input type="email" name="email" id="email">
+                        <span class="mensaje-error" id="mensaje-email"></span>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class=>*</span>
+                        </label>
+                        <input type="password"  name="pas" id="pass">
+                        <span class="mensaje-error" id="mensaje-pass"></span>
+                    </div>
+                    
+                    <div class="contenedor-input">
+                        <label>
+                            Telefono <span class=>*</span>
+                        </label>
+                        <input type="text" name="telefono" id="tlf">
+                        <span class="mensaje-error" id="mensaje-tlf"></span>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Empresa <span class=>*</span>
+                        </label>
+                        <input type="text" name="empresa" id="empresa">
+                        <span class="mensaje-error" id="mensaje-empresa"></span>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            <span class=></span>
+                        </label>
+                        <input type="date" name="fecha" id="fecha">
+                        <span class="mensaje-error" id="mensaje-fecha"></span>
+                    </div>
+
+                    <input type="submit" class="button button-block" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <script src="js/jquery.js"></script>
+   <script src="js/main.js"></script>
+   <script src="../js/forms.js"></script>
+
+</body>
+</html>

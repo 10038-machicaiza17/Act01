@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../recursos/MisEstilos.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return valFormCont()" name="formContrato" id="formContacto">
+        <h2>Contacto</h2>
+        <label>
+            Correo Electronico
+            <input type="email" name="email" id="email" placeholder="Usuario@email.com">
+        </label>
+        <label>
+            Fecha de Nacimiento
+            <input type="date" name="fnac" id="fnac">
+        </label>
+        <label>
+            Telefono
+            <input type="tel" name="tlf" id="tlf" placeholder="Telefono">
+        </label>
+        <!-- onclick="enviarFormulario()" -->
+        <input type="submit" value="Enviar" form="formContacto">
+    </form>
+    <script src="../js/forms.js"></script>
+</body>
+</html>
